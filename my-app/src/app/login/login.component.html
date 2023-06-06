@@ -1,0 +1,17 @@
+<section class="login-container">
+  <div class="login-box">
+    <h1>Login</h1>
+    <form class="login-input" #loginForm="ngForm" (ngSubmit)="login(loginForm)">
+      <div class="input-login">
+        <input type="text" name="username" placeholder="Username" ngModel />
+      </div>
+      <div class="input-login">
+        <input type="password" name="password" placeholder="Password" ngModel />
+      </div>
+
+      <button class="login-btn" type="submit">Login</button>
+      <p>do you have an account?</p>
+      <button class="register-btn" (click)="toRegister()">Sign Up</button>
+    </form>
+  </div>
+</section>

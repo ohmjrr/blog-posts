@@ -1,0 +1,26 @@
+.list-container {
+  width: 600px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-left: 2px solid rgb(192, 146, 78);
+}
+
+.grid {
+  width: 90%;
+  height: 80%;
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  overflow-x: auto;
+}
+
+.post-box {
+  border: 1px solid;
+  width: 150px;
+  height: 150px;
+  margin-left: 15px;
+}

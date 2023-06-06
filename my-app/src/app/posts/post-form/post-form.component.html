@@ -1,0 +1,19 @@
+<div class="form-container">
+  <form class="form-input" (submit)="createPost()">
+    <div class="title-input">
+      <label class="title">Title</label>
+      <input type="text" name="title" [(ngModel)]="model.title" />
+    </div>
+    <div class="content-input">
+      <label class="title">Content</label>
+      <textarea
+        name="content"
+        id=""
+        cols="30"
+        rows="10"
+        [(ngModel)]="model.content"
+      ></textarea>
+    </div>
+    <button type="submit">Create</button>
+  </form>
+</div>
