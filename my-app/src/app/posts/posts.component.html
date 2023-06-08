@@ -1,10 +1,11 @@
 <div class="posts-container">
+  <app-nav-posts></app-nav-posts>
   <h2>Blog Posts</h2>
   <div class="row">
     <div class="form-box">
       <h2>Create Post</h2>
-      <app-post-form (formSubmit)="createPost($event)"></app-post-form>
+      <app-post-form></app-post-form>
     </div>
-    <app-post-list [posts]="posts"></app-post-list>
+    <app-post-list></app-post-list>
   </div>
 </div>

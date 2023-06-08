@@ -1,0 +1,46 @@
+.navbar {
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.left-bar {
+  margin-left: 50px;
+  color: rgb(192, 146, 78);
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.right-bar {
+  margin-right: 50px;
+}
+
+.toggle {
+  position: relative;
+  cursor: pointer;
+  padding: 10px;
+  background-color: rgb(192, 146, 78);
+  font-weight: bold;
+  font-size: large;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  
+}
+
+.dropdown {
+  position: absolute;
+  top: 52px;
+  right: 43px;
+  background-color: white;
+  width: 100px;
+  height: 25px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: larger;
+  cursor: pointer;
+}

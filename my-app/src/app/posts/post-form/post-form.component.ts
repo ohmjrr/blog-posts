@@ -1,5 +1,6 @@
-import { Component, Output, EventEmitter } from '@angular/core';
-import { Post } from '../share/post.model';
+import { Component } from '@angular/core';
+import { PostsService } from '../service/posts.service';
+import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-post-form',
@@ -7,11 +8,9 @@ import { Post } from '../share/post.model';
   styleUrls: ['./post-form.component.css'],
 })
 export class PostFormComponent {
-  @Output() formSubmit:EventEmitter<Post> = new EventEmitter();
-  model: Post = new Post();
+  constructor(private postService: PostsService) {}
 
-  createPost() {
-    this.formSubmit.emit(this.model)
-    this.model = new Post();
+  createPost(form: NgForm) {
+    this.postService.updatePost(form);
   }
 }

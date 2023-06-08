@@ -7,30 +7,20 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
-import { PostsComponent } from './posts/posts.component';
-import { PostFormComponent } from './posts/post-form/post-form.component';
-import { PostListComponent } from './posts/post-list/post-list.component';
-import { PostComponent } from './posts/post/post.component';
+import { AppRoutingModule } from './app-routing.module';
+import { PostsModule } from './posts/posts.module';
 
-const appRoutes: Routes = [
-  { path: 'register', component: RegisterComponent },
-  { path: 'login', component: LoginComponent },
-  { path: 'posts', component: PostsComponent },
-  { path: '', redirectTo : '/login',pathMatch:'full'}
-];
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    RegisterComponent,
-    LoginComponent,
-    PostsComponent,
-    PostFormComponent,
-    PostListComponent,
-    PostComponent,
+  declarations: [AppComponent, RegisterComponent, LoginComponent],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    RouterModule,
+    HttpClientModule,
+    AppRoutingModule,
+    
   ],
-  imports: [BrowserModule, FormsModule, RouterModule.forRoot(appRoutes),HttpClientModule],
-  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

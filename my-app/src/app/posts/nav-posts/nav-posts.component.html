@@ -1,0 +1,7 @@
+<nav class="navbar">
+  <div class="left-bar">wow</div>
+  <div class="right-bar">
+    <button class="toggle" (click)="openDropdown()">Manage</button>
+    <div class="dropdown" *ngIf="openToggle" (click)="signOut()">Log out</div>
+  </div>
+</nav>

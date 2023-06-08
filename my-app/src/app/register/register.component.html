@@ -1,7 +1,7 @@
 <section class="register-container">
     <div class="register-box">
       <h1>Register</h1>
-      <form class="register-input" #register="ngForm" (ngSubmit)="createAccount(register)">
+      <form class="register-input" #register="ngForm" (ngSubmit)="createAccount(register.value)">
         <div class="input-register">
           <input type="text" name="username" ngModel placeholder="Username" />
         </div>

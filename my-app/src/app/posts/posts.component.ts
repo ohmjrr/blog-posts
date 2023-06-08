@@ -1,17 +1,16 @@
 import { Component } from '@angular/core';
-import { Post } from './share/post.model';
+
 
 @Component({
   selector: 'app-posts',
   templateUrl: './posts.component.html',
-  styleUrls: ['./posts.component.css']
+  styleUrls: ['./posts.component.css'],
 })
 export class PostsComponent {
-posts : Post[] = []
+  posts: any[] = [];
 
-createPost(post:Post){
-this.posts.push(post)
-console.log(post);
-
-}
+  createPost(post:any) {
+    this.posts.push(post);
+    console.log(post);
+  }
 }
